@@ -14,7 +14,7 @@ import java.util.List;
 
 @RestController
 public class UserController {
-    @Autowired private UserService userService;
+    @Autowired private UserService userService; //injecting the userService class;
 
     @PostMapping("/users/add/{firstName}/{lastName}/{password}")
     public ResponseEntity<?> addNewUser(@PathVariable("firstName")String firstName,
